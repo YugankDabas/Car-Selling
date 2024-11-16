@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor GAADI</title>
+
+    <!-- import css custome file -->
+    <link rel="stylesheet" href="/jsw/back.css">
+    <style>
+       
+        ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        li {
+          margin-bottom: 5px;
+        }
+      </style>
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+
+        <a href="#" class="logo">Motor<span>GAADI</span></a>
+
+        <!-- navbar section -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#vehicles">Vehicles</a>
+            <a href="#services">services</a>
+            <a href="#featured">featured</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <!-- login button -->
+        <div id="login-btn">
+            <button type="button" class="btn">login</button>
+            <i class="fa-regular fa-user"></i>
+        </div>
+
+   
+          
+          
+          <h2><b>Filters:</b></h2>
+          
+          <label for="brand-filter">Brand:</label>
+          <select id="brand-filter">
+            <option value="">All</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="Maruti">Maruti</option>
+            <option value="Mahindra">Mahindra</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Tata">Tata</option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Maserati">Maserati</option>
+            <option value="Pagani">Pagani</option>
+            <option value="Dodge">Dodge</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Skoda">Skoda</option>
+          </select>
+          
+          <label for="color-filter">Color:</label>
+          <select id="color-filter">
+            <option value="">All</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="Pearl White">Pearl White</option>
+            <option value="White">White</option>
+            <option value="Matte Black">Matte Black</option>
+            <option value="Dual Tone">Dual Tone</option>
+          </select>
+          
+        
+          
+          
+     
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form -->
+    <div class="login-form-container">
+
+        <span class="fa-solid fa-xmark" id="close-login-btn"></span>
+
+        <form action="">
+            <h3>user login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <input type="submit" value="login now" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>don't have an account <a href="#">create one</a></p>
+        </form>
+
+    </div>
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+
+        <h1 class="home-parallax" data-speed="-2">Find your car</h1>
+        <img class="home-parallax" data-speed="5" src="https://www.bugatti.com/fileadmin/_processed_/sei/p54/se-image-72289a5ed49475f26c2799649f2b467e.jpg" alt="">
+        <a href="#" class="btn home-parallax" data-speed="7">explore cars</a>
+
+    </section>
+    <!-- home section end -->
+
+
+    <!-- icon section starts -->
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fa-solid fa-house"></i>
+            <div class="content">
+                <h3>100+</h3>
+                <p>branches</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-car"></i>
+            <div class="content">
+                <h3>3100+</h3>
+                <p>cars sold</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-users"></i>
+            <div class="content">
+                <h3>500+</h3>
+                <p>happy clients</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-car"></i>
+            <div class="content">
+                <h3>390+</h3>
+                <p>new cars</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- icon section end -->
+
+    <!-- vehical section starts-->
+    <section class="vehical" id="vehicles">
+
+        <h1 class="heading">popular <span>vehicals</span></h1>
+
+        <div class="slider">
+
+            <div class="wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="preBtn"></div>
+
+                <div class="wraper-box">
+                    <div class="box active" id="car-img1">
+                        <img src="https://imgd.aeplcdn.com/1056x594/n/g3qpp0b_1638621.jpg?q=75" alt="">
+                        <div class="content">
+                            <h3>new model</h3>
+                            <div class="price"><span>price: </span>Rs. 1,000,000</div>
+                            <p>
+                                <b>Mahindra Thar RWD</b>
+                                <span class="fa-solid fa-circle"></span>2023
+                                <span class="fa-solid fa-circle"></span>Automatic/Manual
+                                <span class="fa-solid fa-circle"></span>Petrol
+                                <span class="fa-solid fa-circle"></span>155kmph
+                            </p>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img2">
+                        <img src="https://gaadiwaadi.com/wp-content/uploads/2022/11/toyota-innova-hycross-rendered-1068x534.jpg" alt="">
+                        <div class="content">
+                            <h3>new model</h3>
+                            <div class="price"><span>price: </span>Rs. 1,855,000</div>
+                            <p>
+                                <b>Toyota Innova Hycross</b>
+                                <span class="fa-solid fa-circle"></span>2023
+                                <span class="fa-solid fa-circle"></span>automatic/mannual
+                                <span class="fa-solid fa-circle"></span>petrol/hybrid
+                                <span class="fa-solid fa-circle"></span>180kmph
+                            </p>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img3">
+                        <img src="https://vehicle-images.dealerinspire.com/stock-images/chrome/770bbd912104fbcd79611a30ae637249.png" alt="">
+                        <div class="content">
+                            <h3>new model</h3>
+                            <div class="price"><span>price: </span>Rs. 8,050,000</div>
+                            <p>
+                                <b>Land Rover Defender 90S</b>
+                                <span class="fa-solid fa-circle"></span>2023
+                                <span class="fa-solid fa-circle"></span>automatic
+                                <span class="fa-solid fa-circle"></span>petrol
+                                <span class="fa-solid fa-circle"></span>240kmph
+                            </p>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img4">
+                        <img src="https://imgd.aeplcdn.com/1056x594/n/vjuri4a_1521687.jpg?q=75" alt="">
+                        <div class="content">
+                            <h3>new model</h3>
+                            <div class="price"><span>price: </span>Rs. 6,800,000</div>
+                            <p>
+                                <b>BMW 5 Series</b>
+                                <span class="fa-solid fa-circle"></span>2023
+                                <span class="fa-solid fa-circle"></span>automatic
+                                <span class="fa-solid fa-circle"></span>petrol/diesel
+                                <span class="fa-solid fa-circle"></span>250kmph
+                            </p>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img5">
+                        <img src="https://imgd.aeplcdn.com/1200x900/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-4.jpeg?isig=0&q=75" alt="">
+                        <div class="content">
+                            <h3>new model</h3>
+                            <div class="price"><span>price: </span>Rs. 700,000</div>
+                            <p>
+                                <b>Maruti Fronx</b>
+                                <span class="fa-solid fa-circle"></span>2023
+                                <span class="fa-solid fa-circle"></span>automatic/manual
+                                <span class="fa-solid fa-circle"></span>petrol
+                                <span class="fa-solid fa-circle"></span>160kmph
+                            </p>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img6">
+                        <img src="https://www.motoroids.com/wp-content/uploads/2021/09/MG-Astor-official_front-1200x675.jpg" alt="">
+                        <div class="content">
+                            <h3>new model</h3>
+                            <div class="price"><span>price: </span>Rs. 1,050,000</div>
+                            <p>
+                                <b>MG Astor</b>
+                                <span class="fa-solid fa-circle"></span> 2023
+                                <span class="fa-solid fa-circle"></span> automatic/manual
+                                <span class="fa-solid fa-circle"></span> petrol
+                                <span class="fa-solid fa-circle"></span> 170kmph
+                            </p>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext " id="nextBtn"></div>
+            </div>
+
+
+            <div class="activeCircle">
+                <div class="fa-regular fa-solid fa-circle" id="forCar-img1"></div>
+                <div class="fa-regular fa-circle" id="forCar-img2"></div>
+                <div class="fa-regular fa-circle" id="forCar-img3"></div>
+                <div class="fa-regular fa-circle" id="forCar-img4"></div>
+                <div class="fa-regular fa-circle" id="forCar-img5"></div>
+                <div class="fa-regular fa-circle" id="forCar-img6"></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- vehical section end-->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+
+        <h1 class="heading">our <span>services</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-solid fa-car"></i>
+                <h3>car selling</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quo.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>parts repair</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quo.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-car-burst"></i>
+                <h3>car insurance</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quo.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-car-battery"></i>
+                <h3>battery replacement</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quo.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-gas-pump"></i>
+                <h3>oil change</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quo.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quo.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- services section end -->
+
+    <!-- featured section starts -->
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>featured</span> cars</h1>
+
+        <div class="featured-slider">
+
+            <div class="featured-wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="fPreBtn"></div>
+
+                <div class="featured-wrapper2">
+                    <div class="featured-wrapper-box">
+
+                        <div class="box active">
+                            <img src="https://imgd.aeplcdn.com/1200x900/n/cw/ec/124027/urban-cruiser-hyryder-exterior-right-front-three-quarter-3.jpeg?isig=0&q=75" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 1,900,000</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://nexaprod3.azureedge.net/-/media/feature/nexawebsitecarbrand/grand-vitara/brand-color/688x360/splendid_silver.webp?modified=20220925155321" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 1,950,000</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20211007013354_Legender_4X4_Variant.jpg" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 4,60,000</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://www.jeep-india.com/content/dam/cross-regional/apac/jeep/en_in/allnewjeepcompass7thjan/new-compass-price-reveal-23Jan/overview/modelizer/nighteagle/night-eagle-black.jpg.img.1440.jpg" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 3,160,000</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://www.drivespark.com/images/2018-06/maruti-suzuki-jimny-exterior-4.jpg" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 1,000,000</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://imgd.aeplcdn.com/0x0/n/enfqg3a_1573837.jpg" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 6,300,000</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/20865/amg-gt-exterior-right-front-three-quarter-60800.jpeg?q=75" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 23,200,000</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://images.91wheels.com//assets/b_images/main/models/profile/profile1665485115.jpg" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 24,400,000</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext" id="fNextBtn"></div>
+            </div>
+
+            <div class="fActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- featured section end -->
+
+    <!-- subscribe section starts -->
+    <section class="subscribe">
+
+        <h3>subscribe for latest updates</h3>
+
+        <p>After Subscribing you will get latest updates.</p>
+
+        <form action="">
+            <input type="email" placeholder="enter your email">
+
+            <input type="submit" placeholder="subBtn">
+        </form>
+    </section>
+    <!-- subscribe section end -->
+
+    <!-- review section starts -->
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading">client's <span>review</span></h1>
+
+        <div class="review-slider">
+            <div class="fa-solid fa-angle-left rPreNext" id="rPreBtn"></div>
+            <div class="review-wrapper">
+
+                <div class="review-wrapper-box">
+
+                    <div class="box active">
+                        <img src="" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="fa-solid fa-angle-right rPreNext" id="rNextBtn"></div>
+
+            <div class="rActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+            </div>
+        </div>
+    </section>
+    <!-- review section end -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+
+            <iframe id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781700.7626304314!2d74.91767141980161!3d29.285725544780725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db00b8670400b%3A0x732eaab4aaa6c143!2sHaryana!5e0!3m2!1sen!2sin!4v1676226353123!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+                <h3>get in touch</h3>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea class="box" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+
+        <div class="footer-box-container">
+
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Uttar Pradesh</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Delhi</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Haryana</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Punjab</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Rajasthan</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fa-solid fa-arrow-right"></i> home</a>
+                <a href="#vehicles"><i class="fa-solid fa-arrow-right"></i> vehicles</a>
+                <a href="#services"><i class="fa-solid fa-arrow-right"></i> services</a>
+                <a href="#featured"><i class="fa-solid fa-arrow-right"></i> featured</a>
+                <a href="#reviews"><i class="fa-solid fa-arrow-right"></i> reviews</a>
+                <a href="#contact"><i class="fa-solid fa-arrow-right"></i> contact</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"><i class="fa-solid fa-phone"></i> +91 7302989657</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> +91 7417110041</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> motorgaadi@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> uttar pradesh, india</a>
+            </div>
+
+            <div class="box">
+                <h3>social media</h3>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i> pinterest</a>
+            </div>
+
+        </div>
+        
+        <div class="copyright">copyright &copy; | all rights reserved</div>
+    </section>
+    <!-- footer section end -->
+
+
+ <script>
+        
+        const brandFilter = document.getElementById('brand-filter');
+        const colorFilter = document.getElementById('color-filter');
+        
+       
+        
+      
+        brandFilter.addEventListener('change', filterCars);
+        colorFilter.addEventListener('change', filterCars);
+        
+        function filterCars() {
+          const selectedBrand = brandFilter.value;
+          const selectedColor = colorFilter.value;
+          
+          
+          const listings = carListings.getElementsByTagName('li');
+          for (let i = 0; i < listings.length; i++) {
+            const listing = listings[i];
+            const brand = listing.getAttribute('data-brand');
+            const color = listing.getAttribute('data-color');
+            
+            if ((selectedBrand === '' || brand === selectedBrand) && (selectedColor === '' || color === selectedColor)) {
+              listing.style.display = 'block';
+            } else {
+              listing.style.display = 'none'; 
+            }
+          }
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+
+    <!-- import javascript custome file -->
+    <script src="/jsw/code.js"></script>
+</body>
+
+</html>
